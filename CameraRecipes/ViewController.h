@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (weak, nonatomic) IBOutlet UIButton *cameraButton;
+- (IBAction)takeAPicture:(id)sender;
+
 @end
 
