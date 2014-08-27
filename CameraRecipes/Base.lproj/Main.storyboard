@@ -16,67 +16,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-os-o0W">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="40" y="20" width="240" height="322"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="40" y="20" width="240" height="162"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="40" y="20" width="240" height="482"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ql-cz-REf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="take a picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="113" y="357" width="94" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="113" y="438" width="94" height="190"/>
+                                <variation key="widthClass=compact"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="436" width="94" height="190"/>
                                 </variation>
                                 <connections>
                                     <action selector="takeAPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iU-JH-Qjd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-os-o0W">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="20" width="240" height="162"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="20" width="240" height="482"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvo-pb-YDR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Edit Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="199" y="516" width="70" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="EditAVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQB-sx-XFB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b1N-os-o0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="6R3-TH-W6J"/>
-                            <constraint firstAttribute="bottom" secondItem="6Ql-cz-REf" secondAttribute="bottom" constant="93" id="m0o-UY-LbM"/>
-                            <constraint firstItem="6Ql-cz-REf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="357" id="odJ-cd-Fwa"/>
-                            <constraint firstAttribute="bottom" secondItem="b1N-os-o0W" secondAttribute="bottom" constant="138" id="voH-1m-NgL"/>
-                            <constraint firstItem="b1N-os-o0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="yxy-F2-H06"/>
+                            <constraint firstItem="b1N-os-o0W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="10P-3W-A8M"/>
+                            <constraint firstItem="6Ql-cz-REf" firstAttribute="top" secondItem="b1N-os-o0W" secondAttribute="bottom" constant="15" id="4Sq-o9-Oor"/>
+                            <constraint firstItem="b1N-os-o0W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="7kl-OE-cGE"/>
+                            <constraint firstItem="b1N-os-o0W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iHI-J5-caI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Ql-cz-REf" secondAttribute="bottom" constant="93" id="jL3-GY-B7F"/>
+                            <constraint firstItem="b1N-os-o0W" firstAttribute="centerX" secondItem="6Ql-cz-REf" secondAttribute="centerX" id="xR1-oR-IuC"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="b1N-os-o0W"/>
                                 <exclude reference="6Ql-cz-REf"/>
+                                <exclude reference="b1N-os-o0W"/>
+                                <exclude reference="Cvo-pb-YDR"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="m0o-UY-LbM"/>
-                                <exclude reference="odJ-cd-Fwa"/>
-                                <exclude reference="6R3-TH-W6J"/>
-                                <exclude reference="voH-1m-NgL"/>
-                                <exclude reference="yxy-F2-H06"/>
+                                <exclude reference="10P-3W-A8M"/>
+                                <exclude reference="7kl-OE-cGE"/>
+                                <exclude reference="iHI-J5-caI"/>
+                                <exclude reference="xR1-oR-IuC"/>
+                                <exclude reference="4Sq-o9-Oor"/>
+                                <exclude reference="jL3-GY-B7F"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="b1N-os-o0W"/>
                                 <include reference="6Ql-cz-REf"/>
+                                <include reference="b1N-os-o0W"/>
                             </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="m0o-UY-LbM"/>
-                                <include reference="odJ-cd-Fwa"/>
-                                <include reference="6R3-TH-W6J"/>
-                                <include reference="voH-1m-NgL"/>
-                                <include reference="yxy-F2-H06"/>
+                                <include reference="10P-3W-A8M"/>
+                                <include reference="7kl-OE-cGE"/>
+                                <include reference="iHI-J5-caI"/>
+                                <include reference="xR1-oR-IuC"/>
+                                <include reference="4Sq-o9-Oor"/>
+                                <include reference="jL3-GY-B7F"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Cvo-pb-YDR"/>
                             </mask>
                         </variation>
                     </view>

@@ -9,12 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (weak, nonatomic) IBOutlet UIButton *cameraButton;
+
+@property(strong, nonatomic)    UIImagePickerController* imagePicker;
+
+@property(strong, nonatomic)    NSString* pathToRecordedVideo;
+
+
 - (IBAction)takeAPicture:(id)sender;
 
+
+- (IBAction)EditAVideo:(id)sender;
 @end
 

@@ -28,5 +28,7 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;Testing the camera&quot; </string>
 </dict>
 </plist>
